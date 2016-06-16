@@ -140,6 +140,65 @@ hr {
     }
   }
 
+.main-image {
+  text-align: center;
+  margin: 0 0 20px;
+
+  > img {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+
+.card-container{
+  width: 100%;
+  max-width: 1000px;
+  background: #fffbf7;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5em;
+  border-radius: 0 0 4px 4px;
+  padding: 1.25em 1em;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9decf;
+ }
+
+.donors-card {
+  width: 31%;
+  padding: 1%;
+  display: inline-block;
+}
+
+.donor-pics {
+  margin: 0 auto;
+  width: 100%;
+  
+      .donor-head {
+        width: 143px;
+        margin: 0 auto;
+          img{
+            width: 100%;
+            padding: 5%;
+          }
+      }
+      .donor-chart {
+        width: 243px;
+        margin: 0 auto;
+          img{
+            width: 100%;
+            padding: 5%;
+          }
+      }
+}
+
+
+
+
+
+
   .timestamp {
   color: oColorsGetPaletteColor('warm-6');
   font-family: $font-sans;
@@ -762,6 +821,29 @@ article{
 
 @media (max-width: 800px) {
 
+    .donors-card {
+    width: 100%;
+      > h3{
+    text-align: center;
+  }
+      }
+
+  .donor-pics {
+    margin: 0 auto;
+    width: 446px;
+
+
+    }
+
+  .donor-head {
+    display: inline-block;
+  }
+
+ .donor-chart {
+    display: inline-block;
+  }
+
+
   .panel {
     float: right;
     background-color: oColorsGetPaletteColor('pink');
@@ -863,12 +945,34 @@ article{
     width:260px;
   }
 
-@media (max-width: 740px) {
+@media (max-width: 470px) {
   .video-player {
     height: 300px;
   }
+  .donor-pics {
+    margin: 0 auto;
+    width: 100%;
+    
+  .donor-head {
+    width: 100%;
+    margin: 0 auto;
+      img{
+        width: 143px;
+        padding: 5%;
+      }
+  }
+  .donor-chart {
+    width: 243px;
+    margin: 0 auto;
+      img{
+        width: 100%;
+        padding: 5%;
+      }
+  }
+}
 }
 
+  
 
 @media (max-width: 600px) {
 
@@ -926,7 +1030,7 @@ article{
 
 
 
-@media (max-width: 490px) {
+@media (max-width: 470px) {
   .video-player {
     height: 250px;
   }

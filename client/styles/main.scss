@@ -170,6 +170,7 @@ hr {
   width: 31%;
   padding: 1%;
   display: inline-block;
+  float: top;
 }
 
 .donor-pics {
@@ -194,10 +195,18 @@ hr {
       }
 }
 
-
-
-
-
+.half-width {
+  float: right;
+  display: inline;
+  padding: 20px;
+  margin: 0px -40px 0px 10px;
+}
+.full-width {
+  display: inline;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
 
   .timestamp {
   color: oColorsGetPaletteColor('warm-6');
@@ -355,6 +364,8 @@ max-width: 620px;
     margin: 20px 15px 10px 20px;
    
 }
+
+
 
 img .tax{
 
@@ -821,18 +832,16 @@ article{
 
 @media (max-width: 800px) {
 
-    .donors-card {
+  .donors-card {
     width: 100%;
       > h3{
-    text-align: center;
+        text-align: center;
+        }
   }
-      }
 
   .donor-pics {
     margin: 0 auto;
     width: 446px;
-
-
     }
 
   .donor-head {
@@ -945,36 +954,33 @@ article{
     width:260px;
   }
 
-@media (max-width: 470px) {
+@media (max-width: 700px) {
   .video-player {
     height: 300px;
   }
-  .donor-pics {
-    margin: 0 auto;
-    width: 100%;
-    
-  .donor-head {
-    width: 100%;
-    margin: 0 auto;
-      img{
-        width: 143px;
-        padding: 5%;
-      }
-  }
-  .donor-chart {
-    width: 243px;
-    margin: 0 auto;
-      img{
-        width: 100%;
-        padding: 5%;
-      }
-  }
-}
 }
 
   
 
 @media (max-width: 600px) {
+
+.half-width {
+  float: none;
+  display: inline-block;
+  padding: 20px;
+  margin: 0 auto;
+  width: 300px;
+   img {
+    width: 100%;
+  }
+}
+.full-width {
+  display: inline;
+  padding: 20px 0px;
+  max-width: 600px;
+  width: 100%;
+  magin: 0px;
+}
 
   h1 {
     font-size: 2.1em;
@@ -1034,6 +1040,30 @@ article{
   .video-player {
     height: 250px;
   }
+
+  .donor-pics {
+  margin: 0 auto;
+  width: 100%;
+  
+      .donor-head {
+        width: 143px;
+        margin: 0 auto;
+        
+          img{
+            width: 100%;
+            padding: 5%;
+          }
+      }
+      .donor-chart {
+        width: 243px;
+
+        margin: 0 auto;
+          img{
+            width: 100%;
+            padding: 5%;
+          }
+      }
+}
 }
 
 @media (max-width: 360px) {

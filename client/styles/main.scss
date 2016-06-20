@@ -140,6 +140,18 @@ hr {
     }
   }
 
+  h7 {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10% 0;
+  color: #777777;
+  font-weight: 200;
+  text-align: center;
+  font-size: 0.95em;
+  > .bullet {
+    margin: 0 10px;
+    }
+  }
 .main-image {
   text-align: center;
   margin: 0 0 20px;
@@ -170,7 +182,7 @@ hr {
   width: 31%;
   padding: 1%;
   display: inline-block;
-  float: top;
+  vertical-align: top;
 }
 
 .donor-pics {
@@ -182,15 +194,15 @@ hr {
         margin: 0 auto;
           img{
             width: 100%;
-            padding: 5%;
+            padding: 5% 0% 0% 0%;
           }
       }
       .donor-chart {
-        width: 243px;
+        width: 229px;
         margin: 0 auto;
           img{
             width: 100%;
-            padding: 5%;
+            padding: 2% 0% 0% 0%;
           }
       }
 }
@@ -203,7 +215,7 @@ hr {
 }
 .full-width {
   display: inline;
-  padding: 20px;
+  padding: 20px 0px;
   max-width: 600px;
   width: 100%;
 }
@@ -841,15 +853,19 @@ article{
 
   .donor-pics {
     margin: 0 auto;
-    width: 446px;
+    width: 400px;
+
     }
 
   .donor-head {
     display: inline-block;
+    vertical-align: middle;
+    padding: 0 2%;
   }
 
  .donor-chart {
     display: inline-block;
+    vertical-align: middle;
   }
 
 
@@ -958,6 +974,10 @@ article{
   .video-player {
     height: 300px;
   }
+
+  .donor-card {
+  max-width: 600px;
+  }
 }
 
   
@@ -1048,19 +1068,20 @@ article{
       .donor-head {
         width: 143px;
         margin: 0 auto;
+        display: block;
         
           img{
             width: 100%;
-            padding: 5%;
+            padding: 2% 0% 0% 0%;
           }
       }
       .donor-chart {
-        width: 243px;
-
+        width: 229px;
+        display: block;
         margin: 0 auto;
           img{
             width: 100%;
-            padding: 5%;
+            padding: 2% 0% 0% 0%;
           }
       }
 }

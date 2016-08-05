@@ -979,16 +979,6 @@ article{
 
 @media (max-width: 600px) {
 
-.half-width {
-  float: none;
-  display: inline-block;
-  padding: 20px;
-  margin: 0 auto;
-  width: 300px;
-   img {
-    width: 100%;
-  }
-}
 .full-width {
   display: inline;
   padding: 20px 0px;
@@ -1056,6 +1046,15 @@ article{
     height: 250px;
   }
 
+  .half-width {
+  display: inline-block;
+  float: none;  
+  padding: 20px 20px;
+  max-width: 300px;
+  width: 100%;
+  magin: 0px;
+}
+
   .donor-pics {
   margin: 0 auto;
   width: 100%;
@@ -1089,4 +1088,13 @@ article{
   .video-player {
     height: 210px;
   }
+
+  .half-width {
+  display: inline-block;
+  float: none;  
+  padding: 20px 00px;
+  max-width: 300px;
+  width: 100%;
+  magin: 0px;
+}
 }
